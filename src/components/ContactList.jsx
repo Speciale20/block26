@@ -18,7 +18,7 @@ function ContactList({ setSelectedContactId }) {
         const result = await response.json();
         setContacts(result);
       } catch (error) {
-        console("Error", error);
+        console.error(error);
       }
     }
     fetchContacts();
